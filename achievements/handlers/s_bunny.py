@@ -39,7 +39,7 @@ def handle(mode, score, beatmap, user_data):
 	return check(mode, score, beatmap.beatmapSetID)
 
 def check(mode, score, beatmapSetID):
-	if mode is not 0 or beatmapSetID is not 184 or not score.fullCombo:
+	if mode != 0 or beatmapSetID != 184 or not score.fullCombo:
 		return []
 	return [0]
 

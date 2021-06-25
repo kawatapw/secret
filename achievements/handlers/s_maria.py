@@ -39,7 +39,7 @@ def handle(mode, score, beatmap, user_data):
 	return check(mode, score.maxCombo)
 
 def check(mode, max_combo):
-	if mode is not 3 or max_combo < 100:
+	if mode != 3 or max_combo < 100:
 		return []
 	return [0]
 

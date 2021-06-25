@@ -41,7 +41,7 @@ def load():
 	ACHIEVEMENTS, LENGTH = common.load_achievement_data(ACHIEVEMENT_BASE, ACHIEVEMENT_KEYS, ACHIEVEMENT_STRUCT)
 
 def handle(mode, score, beatmap, user_data):
-	if mode is not 0:
+	if mode != 0:
 		return []
 	return check(user_data["playcount"])
 
